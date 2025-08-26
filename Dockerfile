@@ -8,7 +8,7 @@ RUN rm -rf /usr/share/nginx/html/*
 COPY index.html main.js styles.css /usr/share/nginx/html/
 
 # Expose port 80
-EXPOSE 80
+EXPOSE 3000
 
 # Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
