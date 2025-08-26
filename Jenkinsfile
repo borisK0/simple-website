@@ -17,7 +17,7 @@ pipeline {
 
         stage('Authenticate to GCP') {
             steps {
-                withCredentials([file(credentialsId: 'boris-temp-for-lab-ba1963e1bdae.json', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
+                withCredentials([file(credentialsId: '65a7cfe4-8768-42ca-8f10-97454823238f', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
                     sh '''
                     gcloud auth activate-service-account --key-file=$GOOGLE_APPLICATION_CREDENTIALS
                     gcloud config set project $PROJECT_ID
