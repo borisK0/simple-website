@@ -1,13 +1,13 @@
 /* Set background */
 html {
-  background-color: black;
+  background-color: purple;
 }
 
 /* styles for the body of the site */
 body {
   width: 60%;
   background-color: yellow;
-  border: 5px solid black;
+  border: 5px solid purple;
   padding: 0 20px 20px 20px;
   margin-top: 25px;
   margin-left: auto;
@@ -16,17 +16,17 @@ body {
 
 /* styles for headline */
 h1 {
-  color: black;
+  color: purple;
 }
 
 /* styles for subheadline */
 h2 {
-  color: black;
+  color: purple;
 }
 
 /* styles for paragraph */
 p {
-  color: black;
+  color: purple;
 }
 
 /* styles for image */
