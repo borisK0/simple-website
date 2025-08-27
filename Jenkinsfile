@@ -35,7 +35,6 @@ pipeline {
                 '''
       }
     }
-####
   }
   environment {
     PROJECT_ID = 'boris-temp-for-lab'
