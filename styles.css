@@ -1,12 +1,12 @@
 /* Set background */
 html {
-  background-color: maroon;
+  background-color: black;
 }
 
 /* styles for the body of the site */
 body {
   width: 60%;
-  background-color: orange;
+  background-color: yellow;
   border: 5px solid black;
   padding: 0 20px 20px 20px;
   margin-top: 25px;
@@ -26,7 +26,7 @@ h2 {
 
 /* styles for paragraph */
 p {
-    color: black;
+  color: black;
 }
 
 /* styles for image */
@@ -35,5 +35,4 @@ img {
   margin-right: auto;
   max-width: 100%;
   height: auto;
-
 }
