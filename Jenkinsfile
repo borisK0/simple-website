@@ -35,7 +35,7 @@ pipeline {
                 '''
       }
     }
-
+####
   }
   environment {
     PROJECT_ID = 'boris-temp-for-lab'
@@ -43,4 +43,19 @@ pipeline {
     REGION = 'europe-west1'
     IMAGE_NAME = 'my-js-app'
   }
+}
+
+stage('Deploy Container') {
+    steps {
+        sh '''
+        # Stop old container if it exists
+        docker rm -f my-js-app || true
+
+        # Pull latest image from Artifact Registry
+        docker pull $REGION-docker.pkg.dev/$PROJECT_ID/$REPO/$IMAGE_NAME:latest
+
+        # Run new container on host port 3000 (mapping to container port 80)
+        docker run -d --name my-js-app -p 3000:80 $REGION-docker.pkg.dev/$PROJECT_ID/$REPO/$IMAGE_NAME:latest
+        '''
+    }
 }
