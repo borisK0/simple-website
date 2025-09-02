@@ -1,13 +1,13 @@
 /* Set background */
 html {
-  background-color: green;
+  background-color: orange;
 }
 
 /* styles for the body of the site */
 body {
   width: 60%;
   background-color: yellow;
-  border: 5px solid green;
+  border: 5px solid orange;
   padding: 0 20px 20px 20px;
   margin-top: 25px;
   margin-left: auto;
@@ -16,17 +16,17 @@ body {
 
 /* styles for headline */
 h1 {
-  color: green;
+  color: orange;
 }
 
 /* styles for subheadline */
 h2 {
-  color: green;
+  color: orange;
 }
 
 /* styles for paragraph */
 p {
-  color: green;
+  color: orange;
 }
 
 /* styles for image */
