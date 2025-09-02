@@ -1,6 +1,6 @@
 /* Set background */
 html {
-  background-color: orange;
+  background-color: green;
 }
 
 /* styles for the body of the site */
@@ -16,17 +16,17 @@ body {
 
 /* styles for headline */
 h1 {
-  color: orange;
+  color: pink;
 }
 
 /* styles for subheadline */
 h2 {
-  color: orange;
+  color: black;
 }
 
 /* styles for paragraph */
 p {
-  color: orange;
+  color: red;
 }
 
 /* styles for image */
